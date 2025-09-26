@@ -159,7 +159,7 @@ document.getElementById("message-form").addEventListener("submit", (e) => {
 
     // Get form data
     const nameInput = document.getElementById("name")
-    const birthDateInput = document.getElementById("tempat-lahir")
+    const birthDateInput = document.getElementById("tanggal-lahir")
     const genderInputs = document.querySelectorAll('input[name="gender"]')
     const messageInput = document.getElementById("pesan")
 

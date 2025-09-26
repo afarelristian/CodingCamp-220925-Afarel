@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi Hari, Welcome To Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="login-modal" id="loginModal">
+        <div class="login-box">
+            <h1 class="login-title">Selamat Datang!</h1>
+            <p class="login-subtitle">Masukkan nama Anda untuk melanjutkan</p>
+            <input type="text" id="loginNameInput" class="login-input" placeholder="Masukkan nama Anda..." autocomplete="name">
+            <button id="loginBtn" class="login-btn">Masuk Website</button>
+        </div>
+    </div>
+
+    <div class="main-container" id="mainContainer">
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">😀</div>
+                <nav class="nav-menu">
+                    <a href="#" class="nav-item" data-page="home">Home</a>
+                    <a href="#" class="nav-item" data-page="profile">Our Profile</a>
+                    <a href="#" class="nav-item" data-page="portfolio">Portofolio</a>
+                    <a href="#" class="nav-item" data-page="message">Message Us</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="page-content" id="home-page">
+                <section class="welcome-section">
+                    <div class="hero-container">
+                        <div class="hero-image">
+                            <div class="hero-overlay">
+                                <h1 class="welcome-title">Hi harfi, Welcome To Website</h1>
+                                <p class="welcome-subtitle">ini adalah website latihan pertama</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="headquarters-section">
+                    <div class="headquarters-content">
+                        <h2 class="headquarters-title">Our Headquarter</h2>
+                        <div class="headquarters-grid">
+                            <div class="headquarters-item">
+                                <div class="headquarters-Jakarta"></div>
+                                <span class="headquarters-name">Jakarta</span>
+                            </div>
+                            <div class="headquarters-item">
+                                <div class="headquarters-Bandung"></div>
+                                <span class="headquarters-name">Bandung</span>
+                            </div>
+                            <div class="headquarters-item">
+                                <div class="headquarters-Surabaya"></div>
+                                <span class="headquarters-name">Surabaya</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="message-section">
+                    <div class="message-content">
+                        <div class="form-container">
+                            <h2 class="message-title">Message Us</h2>
+                            <form id="message-form">
+                                <div class="form-group">
+                                    <label class="form-label" for="name">Nama</label>
+                                    <input type="text" id="name" name="name" class="form-input" placeholder="Nama">
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="tempat-lahir">Tempat Lahir</label>
+                                    <input type="date" id="tempat-lahir" name="tempat-lahir" class="form-input">
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label">Jenis Kelamin</label>
+                                    <div class="gender-group">
+                                        <div class="radio-group">
+                                            <input type="radio" id="laki-laki" name="gender" value="Laki - Laki" class="radio-input">
+                                            <label for="laki-laki" class="radio-label">Laki-Laki</label>
+                                        </div>
+                                        <div class="radio-group">
+                                            <input type="radio" id="perempuan" name="gender" value="Perempuan" class="radio-input">
+                                            <label for="perempuan" class="radio-label">Perempuan</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="pesan">Pesan</label>
+                                    <textarea id="pesan" name="pesan" class="form-textarea" placeholder="Pesan"></textarea>
+                                </div>
+
+                                <button type="submit" class="submit-btn">Submit</button>
+                            </form>
+                        </div>
+
+                        <div class="result-container">
+                            <div class="result-box">
+                                <div class="current-time" id="current-time">Current time : </div>
+                                <div id="form-results" class="form-results hidden">
+                                    <div class="result-item">
+                                        <span class="result-label">Nama</span>: <span id="display-nama"></span>
+                                    </div>
+                                    <div class="result-item">
+                                        <span class="result-label">Tanggal Lahir</span>: <span id="display-tanggal"></span>
+                                    </div>
+                                    <div class="result-item">
+                                        <span class="result-label">Jenis Kelamin</span>: <span id="display-gender"></span>
+                                    </div>
+                                    <div class="result-item">
+                                        <span class="result-label">Pesan</span>: <span id="display-pesan"></span>
+                                    </div>
+                                </div>
+                                <div id="no-data-message" class="no-data-message">
+                                    <p>📝 Silakan isi form dan submit untuk melihat hasilnya</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="page-content hidden" id="profile-page">
+                <section class="profile-hero-section">
+                    <div class="profile-hero-container">
+                        <div class="profile-hero-content">
+                            <h1 class="profile-hero-title">Tentang Kami</h1>
+                            <p class="profile-hero-subtitle">Mengenal lebih dekat tim dan visi misi perusahaan kami</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="company-overview">
+                    <div class="section-container">
+                        <h2 class="section-title">Profil Perusahaan</h2>
+                        <div class="overview-grid">
+                            <div class="overview-item">
+                                <div class="overview-icon">🏢</div>
+                                <h3>Tentang Perusahaan</h3>
+                                <p>Kami adalah perusahaan teknologi yang berdedikasi untuk memberikan solusi inovatif dan berkualitas tinggi kepada klien di seluruh Indonesia.</p>
+                            </div>
+                            <div class="overview-item">
+                                <div class="overview-icon">🎯</div>
+                                <h3>Visi Kami</h3>
+                                <p>Menjadi perusahaan teknologi terdepan yang menghadirkan solusi digital terbaik untuk kemajuan bisnis dan masyarakat.</p>
+                            </div>
+                            <div class="overview-item">
+                                <div class="overview-icon">🚀</div>
+                                <h3>Misi Kami</h3>
+                                <p>Mengembangkan teknologi yang mudah diakses, inovatif, dan memberikan dampak positif bagi perkembangan digital Indonesia.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="team-section">
+                    <div class="section-container">
+                        <h2 class="section-title">Tim Kami</h2>
+                        <div class="team-grid">
+                            <div class="team-member">
+                                <div class="team-avatar">
+                                    <div class="avatar-placeholder">👨‍💼</div>
+                                </div>
+                                <h3 class="team-name">Ahmad Pratama</h3>
+                                <p class="team-role">CEO & Founder</p>
+                                <p class="team-description">Visioner dengan pengalaman 10+ tahun di bidang teknologi dan manajemen bisnis.</p>
+                            </div>
+                            <div class="team-member">
+                                <div class="team-avatar">
+                                    <div class="avatar-placeholder">👩‍💻</div>
+                                </div>
+                                <h3 class="team-name">Sari Dewi</h3>
+                                <p class="team-role">CTO</p>
+                                <p class="team-description">Expert dalam pengembangan software dengan keahlian full-stack development.</p>
+                            </div>
+                            <div class="team-member">
+                                <div class="team-avatar">
+                                    <div class="avatar-placeholder">👨‍🎨</div>
+                                </div>
+                                <h3 class="team-name">Rizki Mahendra</h3>
+                                <p class="team-role">Lead Designer</p>
+                                <p class="team-description">Kreatif dalam menciptakan desain yang user-friendly dan menarik secara visual.</p>
+                            </div>
+                            <div class="team-member">
+                                <div class="team-avatar">
+                                    <div class="avatar-placeholder">👩‍📊</div>
+                                </div>
+                                <h3 class="team-name">Maya Kusuma</h3>
+                                <p class="team-role">Marketing Manager</p>
+                                <p class="team-description">Strategis dalam membangun brand awareness dan menjalin hubungan dengan klien.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="stats-section">
+                    <div class="section-container">
+                        <h2 class="section-title">Pencapaian Kami</h2>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-number">50+</div>
+                                <div class="stat-label">Proyek Selesai</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">30+</div>
+                                <div class="stat-label">Klien Puas</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">5</div>
+                                <div class="stat-label">Tahun Pengalaman</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">15+</div>
+                                <div class="stat-label">Tim Profesional</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="values-section">
+                    <div class="section-container">
+                        <h2 class="section-title">Nilai-Nilai Kami</h2>
+                        <div class="values-grid">
+                            <div class="value-item">
+                                <div class="value-icon">💡</div>
+                                <h3>Inovasi</h3>
+                                <p>Selalu mencari solusi kreatif dan terdepan untuk setiap tantangan</p>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-icon">🤝</div>
+                                <h3>Kolaborasi</h3>
+                                <p>Bekerja sama dengan klien untuk mencapai hasil terbaik</p>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-icon">⭐</div>
+                                <h3>Kualitas</h3>
+                                <p>Berkomitmen memberikan produk dan layanan berkualitas tinggi</p>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-icon">🔒</div>
+                                <h3>Integritas</h3>
+                                <p>Menjaga kepercayaan dengan transparansi dan kejujuran</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
